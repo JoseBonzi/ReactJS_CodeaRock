@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../assets/statics/logo.svg';
+import '../assets/css/App.css';
+import HeaderLoco from '../components/HeaderLoko';
+import FooterLoko from '../components/FooterLoko'; 
 
 function App() {
   return (
     <div className="App">
+      <HeaderLoco>  </HeaderLoco>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <div className="h1">Vamos que se puede</div>
         </p>
         <a
           className="App-link"
@@ -18,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <FooterLoko></FooterLoko>
     </div>
   );
 }
