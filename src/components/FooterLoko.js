@@ -7,10 +7,13 @@ export class FooterLoko extends Component {
             <div className="footer">
                 <div>
                     <h1>Esto es el footer</h1>
+                    <ul class="list-group">
+                    <li class="list-group-item">An item</li>
+                    </ul>
                 </div>
             </div>
         );
     }
 }
 
-export default FooterLoko;
+export default FooterLoko; 

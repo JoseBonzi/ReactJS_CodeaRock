@@ -2,26 +2,18 @@ import logo from '../assets/statics/logo.svg';
 import '../assets/css/App.css';
 import HeaderLoco from '../components/HeaderLoko';
 import FooterLoko from '../components/FooterLoko'; 
-
+import Hooks from '../components/Hooks';
 function App() {
   return (
+
     <div className="App">
-      <HeaderLoco>  </HeaderLoco>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <div className="h1">Vamos que se puede</div>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <FooterLoko></FooterLoko>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" 
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+      </link>
+      <Hooks></Hooks>
+      
     </div>
   );
 }
