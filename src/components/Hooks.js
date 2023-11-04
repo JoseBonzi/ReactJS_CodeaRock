@@ -1,28 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Cuenta from "./Cuenta";
 
 export default function Hooks() {
-  const [cuenta, setCuenta] = useState(0);
-
-  const handleClick = () => {
-    setCuenta(cuenta + 1);
-    console.log(cuenta);
+  const [cuenta1, setCuenta] = useState(0);
+  const [cuenta2, setCuenturra] = useState(0);
+  const handleClick = (e) => {
+    const quien = e.target.getAttribute("name");
+    if (quien == "cuenta1") {
+      setCuenta(cuenta1 + 1);
+      console.log("useState", cuenta1);
+    } else {
+      setCuenturra(cuenta2 + 1);
+      console.log("useState cuenta2", cuenta2);
+    }
   };
+  useEffect(() => {
+    console.log("useEffect, Me ejecuto");
+  }, [cuenta2]);
   return (
     <div>
-      {cuenta == 0 ? (
+      {cuenta1 == 0 ? (
         <h1>Arranquemos a contar a ver si nos dormimos.</h1>
       ) : (
-        <div>
-          {cuenta > 1 ? (
-            <h1>Contamos {cuenta} obejitas.</h1>
-          ) : (
-            <h1>Contamos {cuenta} obejita.</h1>
-          )}
-          {/* Ej: {cuenta > 1 ? ():()},  trabaja como un if */}
-          {cuenta && <h4>Que bueno a ver si nos dormimos</h4>}
-        </div>
+        <Cuenta cuenta1={cuenta1}></Cuenta>
       )}
-      <button onClick={handleClick}>Contar otra</button>
+      <button onClick={handleClick} name="cuenta1">
+        Contar otra
+      </button>
+      <button onClick={handleClick} name="cuenta2">
+        Contar otra cuenturra
+      </button>
     </div>
   );
 }
