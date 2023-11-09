@@ -1,1 +1,1 @@
-Este un prototipo, osea la idea de este proyecto es mostrar un poco todo lo que aprendi en el proyecto, las cosas que me ayudaron a hacer el siguiente proyecto en donde voy a volcar todos esos conocimientos para hacer un front de un e-commerce.
+Este un prototipo, o sea la idea de este proyecto es mostrar un poco todo lo que aprendí en el curso, las cosas que me ayudaron a hacer el siguiente proyecto en donde voy a volcar todos esos conocimientos para hacer un front de un e-commerce.
